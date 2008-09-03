@@ -1,15 +1,10 @@
-set :user, "deploy"
-set :application, "cmdrkeene.com"
-set :repository,  "set your repository location here"
+set :user, "deploy" # make sure you are key authenticated
+set :application, "cmdrkeene"
 
-# If you aren't deploying to /u/apps/#{application} on the target
-# servers (which is the default), you can specify the actual location
-# via the :deploy_to variable:
-# set :deploy_to, "/var/www/#{application}"
-
-# If you aren't using Subversion to manage your source code, specify
-# your SCM below:
-# set :scm, :subversion
+# :deploy_to => /opt/apps/#{application} by default
+set :repository, "git@github.com:cmdrkeene/cmdrkeene.git"
+set :scm, "git"
+set :deploy_via, :remote_cache
 
 role :app, "cmdrkeene.com"
 role :web, "cmdrkeene.com"
