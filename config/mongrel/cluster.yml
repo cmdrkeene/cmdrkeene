@@ -1,5 +1,5 @@
 --- 
-user: mongrel_cmdrkeene
+user: deploy
 group: app_cmdrkeene
 cwd: /opt/apps/cmdrkeene/current
 log_file: /opt/apps/cmdrkeene/shared/log/mongrel.log
